@@ -9,14 +9,14 @@ function sortear(){
     let sorteados = [];
     let numero;
 
-    if (de < ate && quantidade < (ate - de + 1)){
+    if (de < ate && quantidade <= (ate - de + 1)){
         sorteador(quantidade, de, ate, sorteados, numero);
     } else {
         if (de > ate) {
-            alert('O campo Do Numero precisa ser menor que o campo Até o numero')
+            alert('O campo Do Numero precisa ser menor que o campo Até o numero');
         }
-        if ( quantidade > (de + ate)){
-            alert('Você colocar uma Quantidade maior que o Intervalo de Número')
+        if ( quantidade > (de - ate + 1)){
+            alert('Você colocar uma Quantidade maior que o Intervalo de Número');
         }
     }
 /*
